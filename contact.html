@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact</title>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<!-- Create navigation bar with bootstrap -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-clear" id="main-navigation">
+
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  	</button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+    <ul class="navbar-nav mr-auto">
+
+    	<li class="nav-item active">
+    		<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+    	</li>
+
+    	<li class="nav-item active">
+    		<a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a>
+    	</li>
+
+    	<li class="nav-item active">
+    		<a class="nav-link" href="skills.html">Skills/Experience <span class="sr-only">(current)</span></a>
+    	</li>
+
+    	<li class="nav-item active">
+    		<a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+    	</li>
+
+      </ul>
+
+  </div>
+
+</nav>
+
+<!-- Create a container to hold the contact divs/rows/columsn -->
+<div class="container">
+
+	<!-- Scrolling text via javascript to greet the user -->
+	<div class="row contact-row">
+		<div class="col-lg" id="contact-upper-div">
+			<p id="contact-text"></p>	
+		</div>
+	</div>
+
+	<!-- Buttons going to my linked in/email -->
+	<div class="row contact-row">
+		<div class="col-lg contact-col">
+			<a href="mailto: brud.91@gmail.com"><button type="button" class="btn btn-link"><div>Email</div></button></a>
+		</div>
+
+		<div class="col-lg">
+			<a href="https://www.linkedin.com/in/brian-rud"><button type="button" class="btn btn-link"><img src="LI-Logo.png" class="contact-button"></button></a>
+		</div>
+	</div>
+
+	<!-- A div to house a form where users can submit comments.  behavior.js will handle the form behavior -->
+	<div class="row contact-row">
+
+		<div class="col-lg contact-col" id="comment-div">
+
+			<form id="comment-form">
+
+				<div class="form-group">
+			 		<label for="comments">I would also love to hear your feedback</label>
+			    	<textarea class="form-control" id="comments" rows="5"></textarea>
+
+			    	<button type="submit" class="btn btn-primary mb-2" id="comments-button">Submit</button>
+			 	</div>
+
+			</form>
+
+		</div>
+
+	</div>
+
+	<div class="row contact-row">
+		<div class="col-lg">
+			<p id="attribution">All icons on the main page are from <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
+		</div>
+	</div>
+	
+</div>
+
+<script type="text/javascript" src="behavior.js"></script>
+
+</body>
+</html>
